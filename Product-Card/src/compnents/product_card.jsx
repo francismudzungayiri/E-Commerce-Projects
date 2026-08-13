@@ -6,7 +6,7 @@ function ProductCard() {
 
   return (
     <div className="w-full max-w-sm overflow-hidden rounded-3xl bg-white shadow-xl shadow-slate-900/10">
-      <div className="relative flex h-72 items-center justify-center overflow-hidden bg-gradient-to-br from-violet-400 via-violet-500 to-violet-800">
+      <div className="relative flex h-72 items-center justify-center overflow-hidden bg-linear-to-br from-violet-400 via-violet-500 to-violet-800">
         <button
           type="button"
           onClick={() => setLiked((prev) => !prev)}
