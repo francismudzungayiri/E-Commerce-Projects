@@ -50,3 +50,26 @@ cd Tripple-Product-Card
 npm install
 npm run dev
 ```
+
+### [Product-Catalog-Grid](./Product-Catalog-Grid)
+
+![Product Catalog Grid screenshot](./Product-Catalog-Grid/screenshot.png)
+
+A full catalog page layout built with React, Vite, and Tailwind CSS, combining a filter sidebar with a responsive product grid.
+
+**Features**
+
+- Sidebar filters for categories, price range, ratings, and brands
+- Responsive product grid (1 column on mobile, up to 3 on desktop)
+- Product cards with wishlist toggle, color swatches, star ratings, and review counts
+- Data-driven products and filters rendered from static data files
+
+**Stack:** React 19, Vite, Tailwind CSS v4
+
+**Run locally**
+
+```bash
+cd Product-Catalog-Grid
+npm install
+npm run dev
+```
