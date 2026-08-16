@@ -73,3 +73,26 @@ cd Product-Catalog-Grid
 npm install
 npm run dev
 ```
+
+### [WishList-Project](./WishList-Project)
+
+![WishList Project screenshot](./WishList-Project/screenshot.png)
+
+A product hero and wishlist landing page built with React, Vite, and Tailwind CSS, featuring a category-filtered product hero and a live wishlist counter in the navbar.
+
+**Features**
+
+- Navbar with category links and a wishlist icon showing a live count badge
+- Hero section with vertical category filter buttons
+- Product cards with wishlist toggle, rendered from a data-driven product list
+- Icons via `lucide-react`
+
+**Stack:** React 19, Vite, Tailwind CSS v4
+
+**Run locally**
+
+```bash
+cd WishList-Project
+npm install
+npm run dev
+```
