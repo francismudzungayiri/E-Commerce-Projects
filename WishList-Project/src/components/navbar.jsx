@@ -3,7 +3,7 @@ import { Heart, User } from "lucide-react";
 
 const navlinks = ["products", "story", "manufacturing", "packaging"];
 
-const Navbar = () => {
+const Navbar = ({ num_of_wishes }) => {
   const [activeLink, setActiveLink] = useState(navlinks[0]);
   return (
     <nav className="w-full flex items-center justify-between">
@@ -22,6 +22,11 @@ const Navbar = () => {
       </ul>
       <div className="flex items-center gap-10">
         <div className="relative cursor-pointer">
+          {num_of_wishes > 0 && (
+            <span className="absolute -top-2 -right-2 w-4 h-4 rounded-full bg-red-500 text-white text-xs flex items-center justify-center">
+              {num_of_wishes}
+            </span>
+          )}
           <Heart size={20} className="text-gray-500 hover:text-gray-700" />
         </div>
         <button className="flex items-center gap-2 text-gray-500 hover:text-gray-700 cursor-pointer">
