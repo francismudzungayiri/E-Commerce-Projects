@@ -14,12 +14,10 @@ function ProductCard({ product, setWishesNum }) {
           className="aspect-5/3 w-full object-cover transition-transform duration-300 group-hover:scale-105"
         />
         <button
-          onClick={() =>
-            setWishesNum((prev) => {
-              setIsWished(!isWished);
-              return isWished ? prev - 1 : prev + 1;
-            })
-          }
+          onClick={() => {
+            setIsWished(!isWished);
+            setWishesNum((prev) => (isWished ? prev - 1 : prev + 1));
+          }}
           type="button"
           aria-label="Toggle wishlist"
           className="absolute top-3 right-3 flex h-8 w-8 items-center justify-center rounded-full bg-white/90 text-neutral-800 shadow-sm transition-colors hover:text-red-500"
